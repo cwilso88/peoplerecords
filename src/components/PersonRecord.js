@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import getPeopleRecords from '../api/api';
 
 
 class PersonRecord extends Component {
@@ -8,8 +7,16 @@ class PersonRecord extends Component {
         people: []
     }
 
-    componentDidMount() {
-        getPeopleRecords();
+    async componentDidMount() {
+        const response = await axios.get(`https://api.salesloft.com/v2/people.json`, {
+        headers: {
+            'Authorization': `Bearer ${process.env.REACT_APP_SECRET_NAME}`,
+            'Access-Control-Allow-Headers': 'Content-Type: json'
+        }
+    });
+    this.setState({ people: response.data });
+
+    console.log(response.data);
     }
 
     
@@ -17,7 +24,7 @@ class PersonRecord extends Component {
     render() {
         return (
             <div>
-                Hello
+               List of People Records
             </div>
         )
     }

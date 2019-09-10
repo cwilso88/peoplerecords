@@ -1,14 +1,25 @@
 import React, { Component } from 'react';
+import getPeopleRecords from '../api/api';
+
 
 class PeopleRecords extends Component {
+    state = {
+        people: []
+    }
+
+    componentDidMount() {
+        getPeopleRecords();
+    }
+
+
     render() {
         return (
             <div id="PeopleRecords" className="container mt-5">
                 <h3>List of Personal Records</h3>
                 
                <div className="border border-secondary bg-light justify-items-center">
-                <div class="card m-5" style={{width: "28rem"}}>
-                    <div class="card-header text-white text-uppercase">
+                <div className="card m-5" style={{width: "28rem"}}>
+                    <div className="card-header text-white text-uppercase">
                         Full Name
                     </div>
                         <ul className="list-group list-group-flush">
