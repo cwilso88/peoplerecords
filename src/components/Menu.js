@@ -4,7 +4,7 @@ const Menu = () => {
     return (
         <div id="menu">
             <nav className="navbar navbar-light bg-light p-3">    
-                <div className="navbar-brand" href="#">
+                <div class="navbar-brand" href="#">
                     <img src="https://logodix.com/logo/1627823.jpg" alt="logo"/>
                 </div>         
                 <form className="form-inline mr-5">
