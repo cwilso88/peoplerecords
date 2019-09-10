@@ -15,3 +15,8 @@ i {
 .card-header {
     background-color: #004a7f;
 }
+
+#table-header {
+    background: #004a7f;
+    color: white;
+}

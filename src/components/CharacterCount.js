@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 class CharacterCount extends Component {
     render() {
         return (
-            <div>
-                <table class="table table-bordered">
+            <div id="characterCount" className="mt-3">
+                <table class="table table-bordered bg-light">
                     <thead>
-                        <tr>
+                        <tr id="table-header">
                             <th scope="col">Character</th>
                             <th scope="col">Count</th>
                         </tr>
