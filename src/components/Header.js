@@ -3,7 +3,7 @@ import React from 'react';
 const Header = (props) => {
     const { branding, subtitle } = props;
     return (
-        <header className="mt-5">
+        <header className="mt-5 text-center">
             <div className="container">
               <h1>{branding}</h1>
               <h4>{subtitle}</h4>
