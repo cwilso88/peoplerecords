@@ -7,7 +7,7 @@ const Menu = () => {
                 <div class="navbar-brand" href="#">
                     <img src="https://logodix.com/logo/1627823.jpg" alt="logo"/>
                 </div>         
-                <form className="form-inline">
+                <form className="form-inline mr-5">
                     <div className="input-group">
                         <div className="input-group-prepend">
                         <span className="input-group-text" id="basic-addon1">
