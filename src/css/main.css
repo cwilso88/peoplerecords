@@ -3,4 +3,15 @@
     height: 120px;
     margin-left: 10px;
 }
+
+.App {
+    background-color: #F0F8FF;
+}
+
+i {
+    color: #004a7f; 
+}
     
+.card-header {
+    background-color: #004a7f;
+}

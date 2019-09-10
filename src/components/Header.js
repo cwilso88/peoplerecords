@@ -6,7 +6,7 @@ const Header = (props) => {
         <header className="mt-5 text-center">
             <div className="container">
               <h1>{branding}</h1>
-              <h4>{subtitle}</h4>
+              <h4 className="text-secondary">{subtitle}</h4>
               <hr />
             </div>
         </header>
