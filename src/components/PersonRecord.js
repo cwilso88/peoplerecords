@@ -7,20 +7,22 @@ class PersonRecord extends Component {
         people: []
     }
 
-    componentDidMount() {
-        axios.get('https://api.salesloft.com/v2/people.json', {
+     async getPeopleRecords(term) {
+        const response = await axios.get('https://api.salesloft.com/v2/people.json', {
             params: { email_addresses: term },
             headers: {
                 Authorization: 
                     `Bearer ${process.env.REACT_APP_SECRET_NAME}`
             }
-        })
-    }
+        });
+        console.log(response.data);
+       }
+    
 
     render() {
         return (
             <div>
-                PersonRecord
+                Person Records
             </div>
         )
     }
