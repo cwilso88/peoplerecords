@@ -11,7 +11,8 @@ class PersonRecord extends Component {
         axios.get('https://api.salesloft.com/v2/people.json', {
             params: { email_addresses: term },
             headers: {
-                
+                Authorization: 
+                    `Bearer ${process.env.REACT_APP_SECRET_NAME}`
             }
         })
     }
