@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
      <Menu />
-     <Header />
+     <Header branding="The best app"/>
      <CharacterCount />
      <PeopleRecords />
      <PersonRecord />
