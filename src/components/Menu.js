@@ -8,7 +8,7 @@ const Menu = () => {
                     <div className="input-group">
                         <div className="input-group-prepend">
                         <span className="input-group-text" id="basic-addon1">
-                        <i className="fas fa-search"></i>
+                            <i class="fas fa-search"></i>
                         </span>
                         </div>
                     <input type="text" className="form-control" placeholder="Search people records" aria-label="SearchPeopleRecords" aria-describedby="basic-addon1"/>
