@@ -12,6 +12,8 @@ function App() {
      <Menu />
      <Header branding="The best source to locate records" subtitle="Search the records for each person."/>
      <PeopleRecords />
+
+     <Header branding="Current Characters in Use" subtitle="A count of all characters in use for email address."/>
      <CharacterCount />
      <PersonRecord />
     </div>
