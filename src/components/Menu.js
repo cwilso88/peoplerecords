@@ -10,7 +10,7 @@ const Menu = () => {
                 <form className="form-inline mr-5">
                     <div className="input-group">
                         <div className="input-group-prepend">
-                        <span className="input-group-text" id="basic-addon1">
+                        <span className="input-group-text bg-primary text-white" id="basic-addon1">
                             <i className="fas fa-search"></i>
                         </span>
                         </div>
