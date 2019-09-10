@@ -10,12 +10,15 @@ function App() {
   return (
     <div className="App">
      <Menu />
-     <Header branding="The best source to locate records" subtitle="Search the records for each person."/>
-     <PeopleRecords />
+      <div className="container">
+        <Header branding="The best source to locate records" subtitle="Search the records for each person."/>
+        <hr />
+        <PeopleRecords />
 
-     <Header branding="Current Characters in Use" subtitle="A count of all characters in use for email address."/>
-     <CharacterCount />
-     <PersonRecord />
+        <Header branding="Current Characters in Use" subtitle="A count of all characters in use for email address."/>
+        <CharacterCount />
+        <PersonRecord />
+      </div>
     </div>
   );
 }

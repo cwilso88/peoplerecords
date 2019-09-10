@@ -5,9 +5,8 @@ const Header = (props) => {
     return (
         <header className="mt-5 text-center">
             <div className="container">
-              <h1>{branding}</h1>
-              <h4 className="text-secondary">{subtitle}</h4>
-              <hr />
+              <h3>{branding}</h3>
+              <h5 className="text-secondary">{subtitle}</h5>
             </div>
         </header>
     )
