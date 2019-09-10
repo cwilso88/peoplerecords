@@ -6,6 +6,7 @@ import Menu from './components/Menu';
 import PeopleRecords from './components/PeopleRecords';
 import PersonRecord from './components/PersonRecord';
 
+
 import './css/main.css';
 
 require('dotenv').config()

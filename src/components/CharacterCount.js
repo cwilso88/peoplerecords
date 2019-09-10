@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import Button from '../components/Button';
 
 class CharacterCount extends Component {
     render() {
         return (
             <div id="characterCount" className="mt-3">
-                <table class="table table-bordered bg-light">
+                <table className="table table-bordered bg-light">
                     <thead>
                         <tr id="table-header">
                             <th scope="col">Character</th>
@@ -26,6 +27,8 @@ class CharacterCount extends Component {
                         </tr>
                     </tbody>
                 </table>
+
+                <Button />
             </div>
         )
     }

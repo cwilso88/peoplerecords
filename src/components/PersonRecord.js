@@ -8,11 +8,11 @@ class PersonRecord extends Component {
     }
 
     async componentDidMount() {
-        const response = await axios.get(`https://api.salesloft.com/v2/people.json`, {
+        const response = await axios.get('https://api.salesloft.com/v2/people.json', {
         headers: {
             'Authorization': `Bearer ${process.env.REACT_APP_SECRET_NAME}`,
-            'Access-Control-Allow-Headers': 'Content-Type: json',
-            'Access-Control-Allow-Origin': 'http://foo.example'
+            'Access-Control-Allow-Headers': 'Content-Type: application/json',
+            'Access-Control-Allow-Origin': null
         }
     });
     this.setState({ people: response.data });
