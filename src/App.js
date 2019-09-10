@@ -11,8 +11,8 @@ function App() {
     <div className="App">
      <Menu />
      <Header branding="The best source to locate records" subtitle="Search the records for each person."/>
-     <CharacterCount />
      <PeopleRecords />
+     <CharacterCount />
      <PersonRecord />
     </div>
   );
