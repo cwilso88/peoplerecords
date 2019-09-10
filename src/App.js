@@ -10,6 +10,10 @@ function App() {
     <div className="App">
      SalesLoft People Records
      <Header />
+     <CharacterCount />
+     <Menu />
+     <PeopleRecords />
+     <PersonRecord />
     </div>
   );
 }
