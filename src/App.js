@@ -8,10 +8,9 @@ import PersonRecord from './components/PersonRecord';
 function App() {
   return (
     <div className="App">
-     SalesLoft People Records
+     <Menu />
      <Header />
      <CharacterCount />
-     <Menu />
      <PeopleRecords />
      <PersonRecord />
     </div>
