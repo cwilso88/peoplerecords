@@ -5,15 +5,12 @@ import CharacterCount from './components/CharacterCount';
 import Menu from './components/Menu';
 import PeopleRecords from './components/PeopleRecords';
 import PersonRecord from './components/PersonRecord';
+
 import './css/main.css';
 
+require('dotenv').config()
+
 class App extends React.Component {
-
-  onSearchSubmit(term) {
-    axios.get('', {
-
-    });
-  }
 
   render() {
     return (
@@ -21,7 +18,7 @@ class App extends React.Component {
        <Menu />
         <div className="container">
           <Header branding="The best source to locate records" subtitle="Search the records for each person."/>
-          <hr />
+          <hr/>
           <PeopleRecords />
   
           <Header branding="Current Characters in Use" subtitle="A count of all characters in use for email address."/>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import getRecordList from '../api/api.js';
+import axios from 'axios';
+
 
 class PersonRecord extends Component {
     state = {
@@ -7,7 +8,12 @@ class PersonRecord extends Component {
     }
 
     componentDidMount() {
-        getRecordsList.get('')
+        axios.get('https://api.salesloft.com/v2/people.json', {
+            params: { email_addresses: term },
+            headers: {
+                
+            }
+        })
     }
 
     render() {
