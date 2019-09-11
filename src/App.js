@@ -23,7 +23,10 @@ class App extends React.Component {
   getPeopleRecords = async () => {
     const response = await api.get('/api/cwilso88/users');
 
-    console.log(response);
+    console.log(response.data);
+    this.setState({
+      people: response.data
+    });
   }
 
   render() {
@@ -33,7 +36,7 @@ class App extends React.Component {
         <div className="container">
           <Header branding="The best source to locate records" subtitle="Search the records for each person."/>
           <hr/>
-          <PeopleRecords />
+          <PeopleRecords getPeopleRecords={this.getPeopleRecords}/>
   
           <Header branding="Current Characters in Use" subtitle="A count of all characters in use for email address."/>
           <CharacterCount />
