@@ -16,20 +16,15 @@ class App extends React.Component {
     people: []
 }
 
-componentDidMount() {
-  this.onGetRecords('salesloft');
-}
+  componentDidMount() {
+    this.getPeopleRecords();
+  }
 
-onGetRecords = async (term) => {
-    const response = await api.get('/search', {
-      params: {
-        q: term
-      }
-    });
+  getPeopleRecords = async () => {
+    const response = await api.get('/api/cwilso88/users');
 
     console.log(response);
-    this.setState({ people: response });
-}
+  }
 
   render() {
     return (

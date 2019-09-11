@@ -3,15 +3,7 @@ import getPeopleRecords from '../api/api';
 
 
 class PeopleRecords extends Component {
-    state = {
-        people: []
-    }
-
-    componentDidMount() {
-        getPeopleRecords();
-    }
-
-
+   
     render() {
         return (
             <div id="PeopleRecords" className="container mt-5">
