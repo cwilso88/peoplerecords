@@ -17,19 +17,19 @@ class App extends React.Component {
 }
 
 componentDidMount() {
-  this.onGetRecords();
+  this.onGetRecords('salesloft');
 }
 
-onGetRecords = async () => {
-    const response = await api.get('/v2/people.json');
+onGetRecords = async (term) => {
+    const response = await api.get('/search', {
+      params: {
+        q: term
+      }
+    });
 
     console.log(response);
     this.setState({ people: response });
 }
-
-
-
-
 
   render() {
     return (
