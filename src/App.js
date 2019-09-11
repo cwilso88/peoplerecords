@@ -5,6 +5,7 @@ import CharacterCount from './components/CharacterCount';
 import Menu from './components/Menu';
 import PeopleRecords from './components/PeopleRecords';
 import PersonRecord from './components/PersonRecord';
+import axios from 'axios';
 
 
 import './css/main.css';
@@ -21,11 +22,11 @@ class App extends React.Component {
   }
 
   getPeopleRecords = async () => {
-    const response = await api.get('/api/cwilso88/users');
+    const response = await axios.get('https://my-json-server.typicode.com/cwilso88/db/users');
 
-    console.log(response.data);
+    console.log(response);
     this.setState({
-      people: response.data
+      people: response
     });
   }
 

@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
-import getPeopleRecords from '../api/api';
 
 
 class PeopleRecords extends Component {
+
+    componentDidMount() {
+        this.props.getPeopleRecords();
+    }
    
     render() {
         return (
@@ -12,7 +15,7 @@ class PeopleRecords extends Component {
                <div className="border border-secondary bg-light justify-items-center">
                 <div className="card m-5" style={{width: "28rem"}}>
                     <div className="card-header text-white text-uppercase">
-                        Full Name
+                        {this.getPeopleRecords}
                     </div>
                         <ul className="list-group list-group-flush">
                             <li className="list-group-item">Job Title: </li>
