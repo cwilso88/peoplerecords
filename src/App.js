@@ -1,5 +1,5 @@
 import React from 'react';
-import axios from 'axios';
+import api from './api/api';
 import Header from './components/Header';
 import CharacterCount from './components/CharacterCount';
 import Menu from './components/Menu';
@@ -12,6 +12,24 @@ import './css/main.css';
 require('dotenv').config()
 
 class App extends React.Component {
+  state = {
+    people: []
+}
+
+componentDidMount() {
+  this.onGetRecords();
+}
+
+onGetRecords = async () => {
+    const response = await api.get('/v2/people.json');
+
+    console.log(response);
+    this.setState({ people: response });
+}
+
+
+
+
 
   render() {
     return (
