@@ -10,7 +10,7 @@ import axios from 'axios';
 
 import './css/main.css';
 
-require('dotenv').config()
+
 
 class App extends React.Component {
   state = {
@@ -24,11 +24,13 @@ class App extends React.Component {
   getPeopleRecords = async () => {
     const response = await axios.get('https://my-json-server.typicode.com/cwilso88/db/users');
 
-    console.log(response);
+    console.log(response.data);
     this.setState({
-      people: response
+      people: response.data
     });
   }
+
+  
 
   render() {
     return (
@@ -41,7 +43,7 @@ class App extends React.Component {
   
           <Header branding="Current Characters in Use" subtitle="A count of all characters in use for email address."/>
           <CharacterCount />
-          <PersonRecord />
+          
         </div>
       </div>
     );

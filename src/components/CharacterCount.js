@@ -27,8 +27,10 @@ class CharacterCount extends Component {
                         </tr>
                     </tbody>
                 </table>
-
-                <Button />
+                <div>
+                 <Button />
+                </div>
+                
             </div>
         )
     }
