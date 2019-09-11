@@ -4,7 +4,7 @@ export default class button extends Component {
     render() {
         return (
             <div>
-                <button type="button" class="btn btn-secondary align-self-center">
+                <button type="button" className="btn btn-secondary align-self-center">
                     See Character Count
                 </button>
             </div>
