@@ -25,11 +25,14 @@ componentDidMount() {
         Authorization: `Bearer ${process.env.REACT_APP_API_KEY}`,
       },
       params: {
-        id: [1,3,5,7,8,8]
+        id: [1,3,5,7,8,19]
       }
     });
 
     console.log(response.data);
+    this.setState({
+      people: response.data
+    });
   }
 
   
