@@ -1,10 +1,10 @@
 import React from 'react';
-import {KEY} from './api/api';
+//import {KEY} from './api/api';
 import Header from './components/Header';
 import CharacterCount from './components/CharacterCount';
 import Menu from './components/Menu';
 import PeopleRecords from './components/PeopleRecords';
-import PersonRecord from './components/PersonRecord';
+//import PersonRecord from './components/PersonRecord';
 import axios from 'axios';
 import './css/main.css';
 require('dotenv').config()
@@ -20,7 +20,7 @@ class App extends React.Component {
   async getPeopleRecords() {
     const response = await axios.get('https://cors-anywhere.herokuapp.com/https://api.salesloft.com/v2/people.json', {
       headers: {
-        Authorization: `Bearer ${KEY}`,
+        Authorization: `Bearer ${process.env.REACT_APP_API_KEY}`,
       }
     });
 
