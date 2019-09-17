@@ -8,9 +8,9 @@ const PeopleRecordItem = ({ person }) => {
             </div>
         )
     } else {
-        const { id, email_address, title, display_id, city, state } = this.state;
+        const { email_address, title, display_id, city, state } = this.state;
         return (
-            <div id="PeopleRecords" key={id} className="container mt-5">
+            <div id="PeopleRecords" className="container mt-5">
                 <h3>List of Personal Records</h3>
                 
                <div className="border border-secondary bg-light justify-items-center">
