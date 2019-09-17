@@ -16,7 +16,9 @@ class App extends React.Component {
     people: []
 }
 
-
+componentDidMount() {
+  this.getPeopleRecords();
+}
   async getPeopleRecords() {
     const response = await axios.get('https://cors-anywhere.herokuapp.com/https://api.salesloft.com/v2/people.json', {
       headers: {

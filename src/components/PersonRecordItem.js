@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const PeopleRecordItem = ({ person }) => {   
-    if(!person) {
-        return(
-            <div>
-                Looking for your records...
-            </div>
-        )
-    } else {
-        const { id, name, email, phone, department, status, location, image } = this.props.getPeopleRecords;
+    // if(!person) {
+    //     return(
+    //         <div>
+    //             Looking for your records...
+    //         </div>
+    //     )
+    // } else {
+        //const { id, name, email, phone, department, status, location, image } = this.props.getPeopleRecords;
         return (
             <div id="PeopleRecords" className="container mt-5">
                 <h3>List of Personal Records</h3>
@@ -28,6 +28,6 @@ const PeopleRecordItem = ({ person }) => {
             </div>
         )
     }   
-}
+//}
 
 export default PeopleRecordItem;
