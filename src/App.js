@@ -23,6 +23,9 @@ componentDidMount() {
     const response = await axios.get('https://cors-anywhere.herokuapp.com/https://api.salesloft.com/v2/people.json', {
       headers: {
         Authorization: `Bearer ${process.env.REACT_APP_API_KEY}`,
+      },
+      params: {
+        id: [1,3,5,7,8,8]
       }
     });
 
