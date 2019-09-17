@@ -22,7 +22,13 @@ class App extends React.Component {
   }
 
   async getPeopleRecords() {
-    const response = await axios.get('https://api.salesloft.com/v2/people.json',);
+    const response = await axios.get('https://api.salesloft.com/v2/people.json', {
+      headers: {
+        Authorization: 'Bearer '
+      }
+    });
+
+    console.log(response.data);
   }
 
   
