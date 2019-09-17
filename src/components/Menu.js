@@ -5,7 +5,7 @@ const Menu = () => {
         <div id="menu">
             <nav className="navbar navbar-light bg-light p-3">    
                 <div className="navbar-brand" href="#">
-                    <img src="https://logodix.com/logo/1627823.jpg" alt="logo"/>
+                    <img src={require('./../images/logo.jpg')} alt="logo"/>
                 </div>         
                 <form className="form-inline mr-5">
                     <div className="input-group">

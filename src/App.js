@@ -21,9 +21,6 @@ class App extends React.Component {
     const response = await axios.get('https://api.salesloft.com/v2/people.json', {
       headers: {
         Authorization: `Bearer ${process.env.REACT_APP_SECRET_NAME}`,
-        'Access-Control-Request-Method': 'GET',
-        'Access-Control-Request-Headers': 'ContentType, Accept',
-        Origin: 'http://localhost:3000/'
       }
     });
 
