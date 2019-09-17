@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Button from '../components/Button';
 
-class CharacterCount extends Component {
-        renderCharacterCount({ person }) {
+const CharacterCount = ({ person }) => {
             if(!person) {
                 return(
                     <div>
@@ -42,14 +41,5 @@ class CharacterCount extends Component {
                 )      
             }
         }
-
-        render() {
-            return (
-                <div>
-                    {this.renderCharacterCount}
-                </div>
-            )
-        }
-}    
 
 export default CharacterCount;
