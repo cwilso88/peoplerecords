@@ -3,7 +3,7 @@ import React from 'react';
 import Header from './components/Header';
 import CharacterCount from './components/CharacterCount';
 import Menu from './components/Menu';
-import PeopleRecords from './components/PeopleRecordsList';
+import PeopleRecords from './components/PersonRecordItem';
 //import PersonRecord from './components/PersonRecord';
 import axios from 'axios';
 import './css/main.css';

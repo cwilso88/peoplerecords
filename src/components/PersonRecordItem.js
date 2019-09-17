@@ -1,13 +1,8 @@
 import React, { Component } from 'react';
-import getPeopleRecords from '../App';
 
 
-class PeopleRecords extends Component {
 
-    componentDidMount() {
-        this.props.getPeopleRecords();
-    }
-   
+class PeopleRecords extends Component {   
     render() {
         const { id, name, email, phone, department, status, location, image } = this.props.getPeopleRecords;
         
