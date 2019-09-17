@@ -21,13 +21,8 @@ class App extends React.Component {
     this.getPeopleRecords();
   }
 
-  getPeopleRecords = async () => {
-    const response = await axios.get('https://my-json-server.typicode.com/cwilso88/db/users');
-
-    console.log(response.data);
-    this.setState({
-      people: response.data
-    });
+  async getPeopleRecords() {
+    const response = await axios.get('https://api.salesloft.com/v2/people.json',);
   }
 
   
